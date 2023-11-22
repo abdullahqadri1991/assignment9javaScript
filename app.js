@@ -72,7 +72,26 @@ var kashan = 480.
 document.write("<h1>Question # 9</h1>")
 
 
+var colors = ["White", "Black", "Green", "Yellow", "Blue", "Red"] 
 
+document.write ("<br>" + "Colors Name" + "<br>" + colors)
+var userColor = prompt("Add One color beginning of tha List.") //a
+colors.unshift(userColor)
+document.write ("<br>" + colors)
+var userColor2 = prompt("Add One color Ending of tha List.") //b
+colors.push(userColor2)
+colors.shift(userColor)
+document.write ("<br>" + colors)
+var userColor3 = prompt("Add 2 more colorscolor beginning of tha List..") //c
+colors.splice(0,1,userColor3)
+document.write ("<br>" + colors)
+colors.pop() //e
+document.write ("<br>" + colors)
+var userIndexNo = +prompt("At which index number you want to add a color?")
+var userIndexColor = prompt("Type your color name.")
+colors.shift()
+colors.splice(userIndexNo,0,userIndexColor)
+document.write ("<br>" + colors)
 
 
 // Question # 10
@@ -116,10 +135,6 @@ var devices = [`Keyboard` , `Mouse` , `Printer` , `Monitor`]
 
 
 document.write("devices" +"<br>"+  devices  + "<br>"+"<br>")
-
-
-
-
 document.write("Out:" +"<br>"+ devices[0] + "<br>")
 document.write("Out:" +"<br>"+devices[1] + "<br>")
 document.write("Out:" +"<br>"+devices[2] + "<br>")
@@ -133,12 +148,7 @@ document.write("Out:" +"<br>"+devices[3] + "<br>")
 document.write("<h1>Question # 14</h1>")
 
 var devices = [`Keyboard` , `Mouse` , `Printer` , `Monitor`]
-
-
 document.write("devices" +"<br>"+  devices  + "<br>"+"<br>")
-
-
-
 
 document.write("Out:" +"<br>"+ devices[3] + "<br>")
 document.write("Out:" +"<br>"+devices[2] + "<br>")
